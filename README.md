@@ -4,7 +4,7 @@ Eliom app example
 Setting up
 ----------
 
-The only thing you will need is a recent [OPAM](http://opam.ocaml.org) (>= 1.0) for your platform.
+The only thing you will need is a recent [OPAM](http://opam.ocaml.org/doc/Quick_Install.html) (>= 1.0) for your platform.
 
 After you have OPAM:
 
