@@ -1,0 +1,6 @@
+<{config,data,log,public,tmp}>: -traverse
+
+true: thread, debug
+<app/*.{ml,mli,eliom,eliomi}>: syntax(camlp4o)
+<app/server/*>: package(eliom.server)
+<app/client/*>: package(eliom.client)

@@ -1,0 +1,20 @@
+<ocsigen>
+  <server>
+    <port>5000</port>
+
+    <logdir>log</logdir>
+    <datadir>data</datadir>
+    <charset>utf-8</charset>
+
+    <commandpipe>tmp/run/cmd</commandpipe>
+    <extension findlib-package="ocsigenserver.ext.staticmod"/>
+    <extension findlib-package="ocsigenserver.ext.ocsipersist-dbm"/>
+    <extension findlib-package="eliom.server"/>
+
+    <host hostfilter="*">
+      <static dir="public" />
+      <eliommodule module="_build/app/server/chat.cma" />
+      <eliom/>
+    </host>
+  </server>
+</ocsigen>
