@@ -16,5 +16,7 @@
       <eliommodule module="_build/app/server/chat.cma" />
       <eliom/>
     </host>
+
+    <debugmode/>
   </server>
 </ocsigen>

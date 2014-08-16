@@ -1,3 +1,5 @@
 _build/
 log/*
 tmp/run/*
+public/chat.js
+*.map

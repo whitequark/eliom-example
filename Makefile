@@ -1,5 +1,5 @@
 server: build
-	ocsigenserver -c config/server.xml
+	ocsigenserver -v -c config/server.xml
 
 browse:
 	sensible-browser http://localhost:5000
