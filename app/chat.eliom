@@ -20,21 +20,14 @@ let time =
       set_time (print_time (Unix.localtime (Unix.time ())));
       Lwt.return_unit
     done);
-  time
-
-{client{
-  let html_time time =
-    React.S.map (fun s -> [F.pcdata s]) time
-}}
+  Eliom_react.S.Down.of_react time
 
 let main_service =
   Chat.register_service
      ~path:[""]
      ~get_params:Eliom_parameter.unit
     (fun () () ->
-      let div  = D.div [] in
-      let time = Eliom_react.S.Down.of_react time in
-      ignore {unit{ Manip.appendChildren %div [R.p (html_time %time)] }};
+      let div  = D.div [C.node {{F.p [R.pcdata %time]}}] in
       Lwt.return
         (F.html
            (F.head (F.title (F.pcdata "Time")) [])
