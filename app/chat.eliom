@@ -20,7 +20,7 @@ let time =
       set_time (print_time (Unix.localtime (Unix.time ())));
       Lwt.return_unit
     done);
-  Eliom_react.S.Down.of_react time
+  Eliom_react.S.Down.of_react ~scope:`Site time
 
 let main_service =
   Chat.register_service
