@@ -8,7 +8,7 @@
 
     <commandpipe>tmp/run/cmd</commandpipe>
     <extension findlib-package="ocsigenserver.ext.staticmod"/>
-    <extension findlib-package="ocsigenserver.ext.ocsipersist-dbm"/>
+    <extension findlib-package="ocsigenserver.ext.ocsipersist-sqlite"/>
     <extension findlib-package="eliom.server"/>
 
     <host hostfilter="*">
